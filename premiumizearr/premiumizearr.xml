@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>premiumizearr</Name>
+  <Repository>datpat/premiumizearr</Repository>
+  <Registry>https://hub.docker.com/r/datpat/premiumizearr/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/datpat/premiumizearr/</Support>
+  <Project>https://github.com/DatPat/Premiumizearr</Project>
+  <Overview>&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/datpat/premiumizearr/</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8182]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/y1D2enH.png</Icon>
+  <ExtraParams>--user 99</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678269229</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="8182" Default="8182" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8182</Config>
+  <Config Name="Container Variable 1" Target="GOLANG_VERSION" Default="1.16.15" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">1.16.15</Config>
+  <Config Name="Container Variable 2" Target="GOPATH" Default="/go" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/go</Config>
+  <Config Name="Container Variable 3" Target="PREMIUMIZEARR_CONFIG_DIR_PATH" Default="/data" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
+  <Config Name="Container Variable 4" Target="PREMIUMIZEARR_LOGGING_DIR_PATH" Default="/data" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/premiumizearr</Config>
+  <Config Name="/blackhole" Target="/blackhole" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+  <Config Name="/unzip" Target="/unzip" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/unzip</Config>
+  <Config Name="/downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/complete/</Config>
+  <Config Name="/transfers" Target="/transfers" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/work/</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">777</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+</Container>
