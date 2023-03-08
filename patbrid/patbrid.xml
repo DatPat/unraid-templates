@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>patbrid</Name>
+  <Repository>mgoodings/patbrid</Repository>
+  <Registry>https://hub.docker.com/r/mgoodings/patbrid/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/mgoodings/patbrid/</Support>
+  <Project>https://github.com/mgoodings/patbrid</Project>
+  <Overview>A real-debrid blackhole downloader using aria2 RPC&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/mgoodings/patbrid/</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678276469</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>You will need an instance of Aria2 running somewhere to download the files off Real-Debrid.</Requires>
+  <Config Name="REAL_DEBRID_API_KEY" Target="REAL_DEBRID_API_KEY" Default="&amp;lt;your real debrid apikey&amp;gt;" Mode="" Description="You can obtain this from https://real-debrid.com/apitoken" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="WATCH_DIR" Target="WATCH_DIR" Default="" Mode="rw" Description="Directory to watch." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+  <Config Name="WATCH_RATE" Target="WATCH_RATE" Default="5000" Mode="" Description="describes the polling rate for changes" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="ARIA2_URL" Target="ARIA2_URL" Default="http://127.0.0.1:6800/jsonrpc" Mode="" Description="Aria2 JSON-RPC URL" Type="Variable" Display="always" Required="false" Mask="false">http://127.0.0.1:6800/jsonrpc</Config>
+  <Config Name="ARIA2_SECRET" Target="ARIA2_SECRET" Default="yoursecret" Mode="" Description="set this on your aria2 downloader" Type="Variable" Display="always" Required="false" Mask="false">yoursecret</Config>
+</Container>
