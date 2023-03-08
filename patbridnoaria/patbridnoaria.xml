@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>patbridnoaria</Name>
+  <Repository>datpat/patbridnoaria</Repository>
+  <Registry>https://hub.docker.com/r/datpat/patbridnoaria/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/datpat/patbridnoaria/</Support>
+  <Project>https://github.com/jlnsrk/patbrid</Project>
+  <Overview>realdebrid blackhole downloader without the need for aria2&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/datpat/patbridnoaria/&#xD;
+&#xD;
+  REAL_DEBRID_API_KEY,&#xD;
+  WATCH_DIR = '/watch',&#xD;
+  DOWNLOAD_DIR = '/download',&#xD;
+  WATCH_RATE = 5000</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678277189</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="REAL_DEBRID_API_KEY" Target="REAL_DEBRID_API_KEY" Default="" Mode="" Description="get from https://real-debrid.com/apitoken" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="WATCH_RATE" Target="WATCH_RATE" Default="5000" Mode="" Description="how frequently should the folders be checked for new torrent or magnet files?" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/download" Mode="rw" Description="where should the files be downloaded to?" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
+  <Config Name="WATCH_DIR" Target="WATCH_DIR" Default="/watch" Mode="rw" Description="Where sonarr and radarr put the torrent and magnet files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+</Container>
