@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>offcloudbrid</Name>
+  <Repository>datpat/offcloudbrid</Repository>
+  <Registry>https://hub.docker.com/r/datpat/offcloudbrid/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/DatPat/offcloudbrid/issues</Support>
+  <Project>https://github.com/DatPat/offcloudbrid/</Project>
+  <Overview>offcloud.com blackhole downloader&#xD;
+&#xD;
+Works with nzbs, torrents and magnet files. Simply put such a file into the blackhole directory and the downloaded file will eventually appear in the download directory. The files will be downloaded from the torrent and usenet networks by offcloud.com and then downloaded to your NAS from the offcloud.com website. This should be useful if you have limited bandwidth or if you're concerned about your privacy. Works with sonarr and radarr and probably most other arr programs. This version also supports categories in form of folders. If you have an issue with this program please contact me on github by opening an issue there. You will need an offcloud.com account for this to work but you can sign up there for free and enjoy a free allowance of traffic. I am not associated with offcloud.com in any way and do not speak for them. I can offer you no warranties of any kind.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/dKuFDg5.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678361409</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="OFFCLOUD_API_KEY" Target="OFFCLOUD_API_KEY" Default="get it from offcloud" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="WATCH_RATE" Target="WATCH_RATE" Default="5000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="WATCH_DIR" Target="WATCH_DIR" Default="/blackhole" Mode="rw" Description="where offcloudbrid will pick up nzbs, torrents and magnet files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+  <Config Name="DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/download" Mode="rw" Description="where the downloaded files should be put" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
+</Container>
