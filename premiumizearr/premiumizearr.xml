@@ -9,9 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/datpat/premiumizearr/</Support>
   <Project>https://github.com/DatPat/Premiumizearr</Project>
-  <Overview>&#xD;
+  <Overview>Bridge your *Arr clients (Sonarr, Radarr) to your premiumize.me (upload/download manager)&#xD;
 &#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+Monitor blackhole directory to push .magnet and .nzb to Premiumize.me. Monitor and download Premiumize.me transfers (web ui on default port 8182). Mark transfers as failed in Radarr and Sonarr &#xD;
 &#xD;
 https://hub.docker.com/r/datpat/premiumizearr/</Overview>
   <Category>Downloaders:</Category>

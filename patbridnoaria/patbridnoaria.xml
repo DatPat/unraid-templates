@@ -9,9 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/datpat/patbridnoaria/</Support>
   <Project>https://github.com/jlnsrk/patbrid</Project>
-  <Overview>realdebrid blackhole downloader without the need for aria2&#xD;
+  <Overview>Real-Debrid blackhole downloader without the need for aria2&#xD;
 &#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+Downloads torrent and magnet files via real-debrid.com and puts them into dowanload_dir. Protects your privacy and saves you bandwidth. Real-Debrid.com account required. I am not affiliated with real-debrid and I offer no warranties.&#xD;
 &#xD;
 https://hub.docker.com/r/datpat/patbridnoaria/&#xD;
 &#xD;

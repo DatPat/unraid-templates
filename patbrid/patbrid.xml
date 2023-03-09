@@ -11,7 +11,7 @@
   <Project>https://github.com/mgoodings/patbrid</Project>
   <Overview>A real-debrid blackhole downloader using aria2 RPC&#xD;
 &#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+This is the original patbrid. It downloads files off of real-debrid.com using the aria2 downloader&#xD;
 &#xD;
 https://hub.docker.com/r/mgoodings/patbrid/</Overview>
   <Category>Downloaders:</Category>
