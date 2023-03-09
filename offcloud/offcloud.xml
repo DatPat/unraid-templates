@@ -25,6 +25,6 @@ Works with nzbs, torrents and magnet files. Simply put such a file into the blac
   <Requires/>
   <Config Name="OFFCLOUD_API_KEY" Target="OFFCLOUD_API_KEY" Default="get it from offcloud" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="WATCH_RATE" Target="WATCH_RATE" Default="5000" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
-  <Config Name="WATCH_DIR" Target="WATCH_DIR" Default="/blackhole" Mode="rw" Description="where offcloudbrid will pick up nzbs, torrents and magnet files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
-  <Config Name="DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/download" Mode="rw" Description="where the downloaded files should be put" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
+  <Config Name="WATCH_DIR" Target="/watch" Default="/blackhole" Mode="rw" Description="where offcloudbrid will pick up nzbs, torrents and magnet files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+  <Config Name="DOWNLOAD_DIR" Target="/download" Default="/download" Mode="rw" Description="where the downloaded files should be put" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
 </Container>

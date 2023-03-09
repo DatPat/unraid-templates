@@ -32,6 +32,6 @@ https://hub.docker.com/r/datpat/patbridnoaria/&#xD;
   <Requires/>
   <Config Name="REAL_DEBRID_API_KEY" Target="REAL_DEBRID_API_KEY" Default="" Mode="" Description="get from https://real-debrid.com/apitoken" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="WATCH_RATE" Target="WATCH_RATE" Default="5000" Mode="" Description="how frequently should the folders be checked for new torrent or magnet files?" Type="Variable" Display="always" Required="false" Mask="false">5000</Config>
-  <Config Name="DOWNLOAD_DIR" Target="DOWNLOAD_DIR" Default="/download" Mode="rw" Description="where should the files be downloaded to?" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
-  <Config Name="WATCH_DIR" Target="WATCH_DIR" Default="/watch" Mode="rw" Description="Where sonarr and radarr put the torrent and magnet files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/temp/blackhole/</Config>
+  <Config Name="DOWNLOAD_DIR" Target="/download" Default="/download" Mode="rw" Description="where should the files be downloaded to?" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/download/</Config>
+  <Config Name="WATCH_DIR" Target="/watch" Default="/watch" Mode="rw" Description="Where sonarr and radarr put the torrent and magnet files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media/temp/blackhole/</Config>
 </Container>
