@@ -30,7 +30,6 @@ https://hub.docker.com/r/datpat/premiumizearr/</Overview>
   <Config Name="Container Variable 2" Target="GOPATH" Default="/go" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/go</Config>
   <Config Name="Container Variable 3" Target="PREMIUMIZEARR_CONFIG_DIR_PATH" Default="/data" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
   <Config Name="Container Variable 4" Target="PREMIUMIZEARR_LOGGING_DIR_PATH" Default="/data" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data</Config>
-  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/premiumizearr</Config>
   <Config Name="/blackhole" Target="/blackhole" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/blackhole/</Config>
   <Config Name="/unzip" Target="/unzip" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media/temp/unzip</Config>
