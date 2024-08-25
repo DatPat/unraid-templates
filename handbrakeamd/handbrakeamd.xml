@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>HandBrake</Name>
+  <Name>HandBrake-AMD-AMF-VCE</Name>
   <Repository>datpat/handbrakeamd:rocm6</Repository>
   <Registry>https://registry.hub.docker.com/r/jlesage/handbrake</Registry>
   <Network>bridge</Network>
