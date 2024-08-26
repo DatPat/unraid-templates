@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>HandBrake</Name>
+  <Name>HandBrake for Nvidia</Name>
   <Repository>zocker160/handbrake-nvenc:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/jlesage/handbrake</Registry>
   <Network>bridge</Network>
