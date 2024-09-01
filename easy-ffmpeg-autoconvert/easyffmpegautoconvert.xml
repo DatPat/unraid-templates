@@ -22,16 +22,16 @@ NVIDIA: To enable on Nvidia, install Nvidia Vulkan Beta drivers on the host per 
 https://lynne.ee/vulkan-video-decoding.html#driver-support&#xD;
 &#xD;
 vulkan is still in it's infancy and I would not recommend using it just yet, but you do you.</Overview>
-  <Category/>
+  <Category>MediaApp:Video</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/DatPat/unraid-templates/main/easy-ffmpeg-autoconvert/easyffmpegautoconvert.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/qubex22/unraid-templates/main/ffmpeg-nvidia/ffmpeg.png</Icon>
   <ExtraParams>--device /dev/dri:/dev/dri</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1725111881</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>I will not take your money but you can support linuxserver</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
   <Requires/>
   <Config Name="/watch" Target="/watch" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/complete/</Config>
   <Config Name="/temp" Target="/temp" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/incomplete/</Config>
