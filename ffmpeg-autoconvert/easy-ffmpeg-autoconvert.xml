@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>ffmpeg (autoconvert)</Name>
+  <Name>ffmpeg autoconvert</Name>
   <Repository>datpat/ffmpeg:new</Repository>
   <Registry>https://hub.docker.com/r/datpat/ffmpeg</Registry>
   <Network>bridge</Network>
