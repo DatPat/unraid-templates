@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ffmpeg (autoconvert)</Name>
+  <Repository>datpat/ffmpeg:new</Repository>
+  <Registry>https://hub.docker.com/r/datpat/ffmpeg</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/DatPat/easyffmpeg</Support>
+  <Project>https://github.com/DatPat/easyffmpeg</Project>
+  <Overview>this is an ffmpeg that monitors one directory for downloaded video, converts the downloaded file into a target codec (with hwacceleration) and optionally deletes the original file. It is heavily based on linuxserver's ffmpeg but runs constantly looking for new files. This container has no ui but you can find logoutput in the logs of the container.&#xD;
+&#xD;
+caveats:&#xD;
+if you set qsv, please change the bitrate variable to quality index instead.&#xD;
+if you use nvenc you need to add '--runtime nvidia' to extra Parameters&#xD;
+if you use software encoding, you need to set an encoding library in codec, i.e. libx264 instead of h264&#xD;
+if you use vulkan you need to add the following envvars:&#xD;
+ANV: To enable for Intel, set the env var ANV_VIDEO_DECODE=1&#xD;
+RADV: To enable on AMD, set the env var RADV_PERFTEST=video_decode&#xD;
+NVIDIA: To enable on Nvidia, install Nvidia Vulkan Beta drivers on the host per this article:&#xD;
+https://lynne.ee/vulkan-video-decoding.html#driver-support&#xD;
+&#xD;
+vulkan is still in it's infancy and I would not recommend using it just yet, but you do you.</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/DatPat/unraid-templates/main/easy-ffmpeg-autoconvert/easyffmpegautoconvert.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/qubex22/unraid-templates/main/ffmpeg-nvidia/ffmpeg.png</Icon>
+  <ExtraParams>--device /dev/dri:/dev/dri</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725111881</DateInstalled>
+  <DonateText>I will not take your money but you can support linuxserver</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="/watch" Target="/watch" Default="" Mode="rw" Description="Where should the unconverted files be picked up?" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/complete/</Config>
+  <Config Name="/temp" Target="/temp" Default="" Mode="rw" Description="Where should temporary files be written to?" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/incomplete/</Config>
+  <Config Name="/ready" Target="/ready" Default="" Mode="rw" Description="Where should the converted files be placed?" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/temp/ready/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Userid" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GroupId" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="WORK_DEVICE" Target="WORK_DEVICE" Default="/dev/dri/renderD128" Mode="" Description="Set on which device the work should be done, set to " Type="Variable" Display="always" Required="false" Mask="false">/dev/dri/renderD128</Config>
+  <Config Name="VIDEO_BIT_RATE" Target="VIDEO_BIT_RATE" Default="4M" Mode="" Description="bitrate or quality index when using qsv e.g 25" Type="Variable" Display="always" Required="false" Mask="false">4M</Config>
+  <Config Name="VIDEO_CODEC" Target="VIDEO_CODEC" Default="av1" Mode="" Description="target codec or encoding library when using software encoding" Type="Variable" Display="always" Required="false" Mask="false">av1</Config>
+  <Config Name="DELETE_SOURCE_FILE" Target="DELETE_SOURCE_FILE" Default="1" Mode="" Description="Delete the original file after successful encoding?" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="DELETE_MISC_FILES" Target="DELETE_MISC_FILES" Default="1" Mode="" Description="Delete non subtitle and video files? (readme's etc)" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="VIDEO_ACCEL_API" Target="VIDEO_ACCEL_API" Default="va" Mode="" Description="acceleration api to be used: va,qsv,nvenc or vulkan&#13;&#10;add --runtime=nvidia to extra params in advanced view when running nvenc.&#13;&#10;vulkan:&#13;&#10;add envvar RADV_PERFTEST=video_decode for amd&#13;&#10;add envvar ANV_VIDEO_DECODE=1&#13;&#10;vulkan on nvidia: https://lynne.ee/vulkan-video-decoding.html#driver-support" Type="Variable" Display="always" Required="false" Mask="false">va</Config>
+  <Config Name="VIDEO_SHOW_PROGRESS" Target="VIDEO_SHOW_PROGRESS" Default="1" Mode="" Description="Show encoding progress from ffmpeg in the log file?" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="FOLDER_CLEAN_DEPTH" Target="FOLDER_CLEAN_DEPTH" Default="1" Mode="" Description="Set the depth of ignored empty folders(useful if you have categoryfolders)-1 disables it" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+</Container>
